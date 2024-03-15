@@ -17,7 +17,7 @@ Code_ATN: Code to produce the analysis in Section 6.1.
 
 
 ---
-Seafood.R : Produces Figure 7
+Seafood.R : Produces Figure 7 and Figures F.2, F.3 and F.4
 ---
 
 ---
@@ -25,5 +25,5 @@ example non-existence.R : Produces Figure C.1
 ---
 
 ---
-Stylized_example.R: Produces Figure 5 and Figures F.2, F.3 and F.4
+Stylized_example.R: Produces Figure 5
 ---

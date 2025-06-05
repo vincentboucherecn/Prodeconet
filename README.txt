@@ -1,15 +1,16 @@
 REPLICATION PACKAGE FOR: THE INTERACTIONS BETWEEN PRODUCTION AND ECOLOGICAL NETWORKS - V. Boucher
 
 ---
-data_ATN.zip : This file contains the output of the simulated data effectively used in the paper
+ATN.zip : This file contains the code and the output of the simulated data effectively used in the paper
 ---
+To recplcate the analysis of Section 6:
+ - Step 1: run gen_data.R - produces baseline ecosystems (without fishing)
+ - Step 2: run comparison0.R - simulates the economy with isolated sectors
+ - Step 3: run comparison_cal.R - calibrates TFP for production network economies
+ - Step 4: run comparison.R - simulates the economy with production network
+ - Step 5: run spagplot.R - computes volatility indices
+ - Step 6: run analysis.R - Produces the analysis of Section 6.
 
----
-Code_ATN: Code to produce the analysis in Section 6.
- - gen_data.R - (RUN FIRST) produces baseline ecosystems (without fishing)
- - comparison.R - simulates the economy with production network
- - comparison0.R - simulates the economy with isolated sectors
- - analysis.R - Produces Figures 8 and F.1
  - function.R - (NOT RUN) functions definitions
  - parameters.R - (NOT RUN) parameters definitions
  - checkreasons.R (OTHER) - For information only, produces summary of rejected ecosystems

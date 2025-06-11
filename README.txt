@@ -2,7 +2,7 @@ REPLICATION PACKAGE FOR: THE INTERACTIONS BETWEEN PRODUCTION AND ECOLOGICAL NETW
 
 ---
 ATN.zip : This file contains the code and the output of the simulated data effectively used in the paper
-The file is too big to be stored on GitHub and is available here:
+The file is too big to be stored on GitHub and is available here: https://atn-replication.s3.valeria.science/replicationATN.zip
 ---
 To recplcate the analysis of Section 6:
  - Step 1: run gen_data.R - produces baseline ecosystems (without fishing)

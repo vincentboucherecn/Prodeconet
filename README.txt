@@ -14,7 +14,6 @@ To recplcate the analysis of Section 6:
 
  - function.R - (NOT RUN) functions definitions
  - parameters.R - (NOT RUN) parameters definitions
- - checkreasons.R (OTHER) - For information only, produces summary of rejected ecosystems
 ---
 
 ---

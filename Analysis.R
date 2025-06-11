@@ -135,8 +135,7 @@ alist0 <- seq(from=0.01,to=0.105, by=0.005)/4
 ##
 # select example
 ##
-## ** Note ** because the code is dynamically launched in parallel, the number associated ecosystem
-## in the example can vary. The procedure below recovers the same example, irrespective on the number
+## ** Note ** selects the ecosystem that is such that the initial catches are the closest for the the 15th level of TFP (High TFP)
 
 wa <- c(alist0[alev],alist[alev])
 dtaselect <- dtac[,c("net","a","c","type","spid")]
@@ -148,18 +147,17 @@ for (i in 1:length(nets)){
   dtaselect3[i] <-abs(dtaselect2$x[which(dtaselect2$Group.1==nets[i] & dtaselect2$Group.3==0)]-dtaselect2$x[which(dtaselect2$Group.1==nets[i] & dtaselect2$Group.3==1)])
 }
 idx <- sort(dtaselect3,index.return=T)
-prnet <- nets[idx$ix[2]]
+prnet <- nets[idx$ix[1]]
 
 
 ###
 # Spag. plots
 ###
-
 prcatch(prnet,alev,500)
 
 prsimu(prnet,alev,500)
 
-alev <- 7
+alev <- 8
 prcatch(prnet,alev,500)
 
 prsimu(prnet,alev,500)

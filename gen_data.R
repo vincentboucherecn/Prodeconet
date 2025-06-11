@@ -102,4 +102,6 @@ simul <- function(dummy){
 ####################
 
 nc <- 32L
+RNGkind("L'Ecuyer-CMRG")
+set.seed(1321)
 outsim <- mclapply(1:nsim,simul,mc.cores=nc,mc.preschedule=F)
